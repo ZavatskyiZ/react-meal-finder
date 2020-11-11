@@ -19,7 +19,6 @@ function App() {
      fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${text}`)
     .then(res => res.json())
     .then(data => setMealsList(data.meals))
-    .then(data=> console.log(data))
   }
   //single meal
   const getMeal = async idMeal =>{
