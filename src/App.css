@@ -1,38 +1,247 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
+
+:root{
+    --softPink: #F9D8D4;
+    --yellow: #F9A734;
+    --DarkYellow: #FB8B24;
+    --green: #36964C;
+    --DarkGreen: #286E38;}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+}
+body{
+    /* background-color: rgb(244, 241, 241); */
+    background: radial-gradient(circle closest-side at 50px 50px, var(--DarkYellow) 3px, transparent 0),
+	radial-gradient(circle closest-side at 40px 60px, var(--DarkYellow) 3px, transparent 0),
+	radial-gradient(circle closest-side at 60px 60px, var(--DarkYellow) 3px, transparent 0),
+	radial-gradient(circle closest-side at 50px 70px, var(--DarkYellow) 3px, transparent 0),
+	
+	radial-gradient(circle closest-side at 150px 165px, var(--DarkYellow) 3px, transparent 0),
+	radial-gradient(circle closest-side at 140px 175px, var(--DarkYellow) 3px, transparent 0),
+	radial-gradient(circle closest-side at 160px 175px, var(--DarkYellow) 3px, transparent 0),
+	radial-gradient(circle closest-side at 150px 185px, var(--DarkYellow) 3px, transparent 0),
+	
+	/* Pineapple base */
+	radial-gradient(ellipse closest-side at 50px 60px, var(--yellow) 18px, transparent 0),
+	
+	radial-gradient(ellipse closest-side at 150px 175px, var(--yellow) 18px, transparent 0),
+	
+	/* Pineapple leafs */
+	radial-gradient(circle closest-side at 30px 40px, var(--softPink) 15px, transparent 0),
+	radial-gradient(circle closest-side at 40px 35px, var(--green) 15px, transparent 0),
+	radial-gradient(circle closest-side at 70px 40px, var(--softPink) 15px, transparent 0),
+	radial-gradient(circle closest-side at 60px 35px, var(--DarkGreen) 15px, transparent 0),
+	
+	radial-gradient(circle closest-side at 130px 155px, var(--softPink) 15px, transparent 0),
+	radial-gradient(circle closest-side at 140px 150px, var(--green) 15px, transparent 0),
+	radial-gradient(circle at 170px 155px, var(--softPink) 15px, transparent 0),
+	radial-gradient(circle at 160px 150px, var(--DarkGreen) 15px, transparent 0);
+	background-color: var(--softPink);
+	background-size: 180px 210px;
+	
+}
+.search{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 20px 0; 
+}
+.search input{
+    border: 1px solid black;
+    border-right: none;
+    width: 80%;
+    padding: 10px;
+}
+.search button{
+    border: 1px solid black;
+    padding: 10px;
+    border-left: none;
+    width: 20%;
+}
+.search h1 {
+
+    font-weight: 900;
+    font-size: 4.2rem;
+    padding: 0 20px 2px 20px;
+}
+h3{
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+.home-btn{
+    text-decoration: none;
+    color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.error{
+    text-align: center;
+    font-weight: 600;
+    font-size: 2.4rem;
+}
+.meal-grid{
+    width: 75%;
+    margin: auto;
+    display: grid;
+    background-color: white;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 1rem;
+
+}
+.meal-item{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    width: 80%;
+    text-align: center;
+    font-size: 1.4rem;
+}
+.meal-pic{
+    padding: 5px;
+}
+.meal-info{
+    text-align: left;
+    margin: 5px 0 0 10px;
+}
+.meals-img{
+    height: 180px;
+    width: 180px;
+}
+.meal-link{
+    margin-top: 10px;
+}
+.full-recipe{
+    border: 1px solid #808080;
+    text-decoration: none;
+    padding: 5px;
+    
+}
+.meal-page{
+    width: 75%;
+    margin: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+    font-family: 'PT Serif', serif;
+}
+.meal-page img{
+    width: 400px;
+    height:400px;
+}
+.picture{
+    margin-left: 15px;
+}
+.meal-header{
+    margin-top: 30px;
+    margin-left: 15px;
+}
+.meal-page h3{
+    color: black;
+    font-size: 5rem;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.meal-page span{
+    color: black;
+    
+}
+.meal-about{
+    width: 400px;
+    display: flex;
+    margin-left: 15px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.ingredients{
+    margin-top: 20px;
+    width: 40%;
+    margin-left: 15px; 
+
+}
+.ingredients-list{
+    list-style: none;
+    line-height: 2.3rem;
+    font-size: 1.6rem;
+    background-color: rgb(247, 226, 195);
+    
+}
+.ingredients-list li{
+    margin-left: 2px;
+}
+.instructions{
+    margin-top: 20px;
+    gap: normal;
+    line-height: 35px;
+    margin-left: 15px;
+    width: 60%;
+
+}
+.meal-page h4{
+    font-size: 2.4rem;
+}
+.instructions p{
+    font-size: 1.6rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*Responsive*/
+@media(max-width:650px){
+    .meal-grid{
+      width: 100%;
+    }
+    .meals-img{
+        height: 120px;
+        width: 120px;
+    }
+    .meal-page{
+        width: 100%;
+    }
+    .meal-page img{
+        width: 250px;
+        height: 250px;
+    }
+    .ingredients{
+        width: 85%;
+    }
+    .instructions{
+        width: 80%;
+    }
+    .meal-about{
+        width:65%;
+    }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*MOBILE*/
+@media(max-width:500px){
+    .meal-grid{
+        width: 100%;
+    }
+    .meals-img{
+        height: 120px;
+        width: 120px;
+    }
+    .meal-page{
+        width: 100%;
+    }
+    .meal-page img{
+        width: 250px;
+        height: 250px;
+    }
+    .ingredients{
+        width: 85%;
+    }
+    .instructions{
+        width: 80%;
+    }
+    .meal-about{
+        width:65%;
+    }
 }
