@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-meal-finder/static/css/main.9f8b33c7.chunk.css",
+    "main.js": "/react-meal-finder/static/js/main.7aef618b.chunk.js",
+    "main.js.map": "/react-meal-finder/static/js/main.7aef618b.chunk.js.map",
+    "runtime-main.js": "/react-meal-finder/static/js/runtime-main.c2ce36ef.js",
+    "runtime-main.js.map": "/react-meal-finder/static/js/runtime-main.c2ce36ef.js.map",
+    "static/js/2.74538075.chunk.js": "/react-meal-finder/static/js/2.74538075.chunk.js",
+    "static/js/2.74538075.chunk.js.map": "/react-meal-finder/static/js/2.74538075.chunk.js.map",
+    "static/js/3.f4f9e4ff.chunk.js": "/react-meal-finder/static/js/3.f4f9e4ff.chunk.js",
+    "static/js/3.f4f9e4ff.chunk.js.map": "/react-meal-finder/static/js/3.f4f9e4ff.chunk.js.map",
+    "index.html": "/react-meal-finder/index.html",
+    "static/css/main.9f8b33c7.chunk.css.map": "/react-meal-finder/static/css/main.9f8b33c7.chunk.css.map",
+    "static/js/2.74538075.chunk.js.LICENSE.txt": "/react-meal-finder/static/js/2.74538075.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c2ce36ef.js",
+    "static/js/2.74538075.chunk.js",
+    "static/css/main.9f8b33c7.chunk.css",
+    "static/js/main.7aef618b.chunk.js"
+  ]
+}
